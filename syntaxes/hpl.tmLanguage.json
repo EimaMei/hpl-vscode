@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "HOI4 Programming Language",
+  "patterns": [
+    {
+      "include": "#types"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#fstrings"
+    }
+  ],
+  "repository": {
+    "types": {
+      "patterns": [
+        {
+          "name": "storage.type.string.hpl",
+          "match": "\\bstring\\b"
+        },
+        {
+          "name": "storage.type.int.hpl",
+          "match": "\\bint\\b"
+        },
+        {
+          "name": "storage.type.float.hpl",
+          "match": "\\bfloat\\b"
+        },
+        {
+          "name": "storage.type.bool.hpl",
+          "match": "\\bbool\\b"
+        },
+        {
+          "name": "storage.type.scope.hpl",
+          "match": "\\bscope\\b"
+        },
+        {
+          "name": "storage.type.auto.hpl",
+          "match": "\\bauto\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "support.function.core.hpl",
+          "match": "\\b(print|str|bool|int|float|createFolder|removeFolder|createFile|readFile|writeFile|writeToLine|writeToMultipleLines|removeFile|copyFile|writeLocalisation|convertToDds|pathExists|getFilenameFromPath|find|replaceAll)\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.hpl",
+          "match": "\\b(if|return)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.hpl",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.hpl",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "fstrings": {
+      "name": "string.quoted.fstring.hpl",
+      "begin": "f\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.hpl",
+          "match": "\\\\."
+        },
+        {
+          "name": "constant.other.placeholder.hpl",
+          "match": "{[^}]*}"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.hpl"
+}
