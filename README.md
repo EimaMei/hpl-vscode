@@ -8,4 +8,4 @@ VSCode extension for [HPL](https://github.com/EimaMei/HPL).
 
 ## Download
 
-https://marketplace.visualstudio.com/items?itemName=Allyedge.hpl&ssr=false#overview
+https://marketplace.visualstudio.com/items?itemName=Allyedge.hpl
