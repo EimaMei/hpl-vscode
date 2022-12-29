@@ -116,6 +116,10 @@
         {
           "name": "keyword.control.hpl",
           "match": "\\b(if|return)\\b"
+        },
+        {
+          "name": "keyword.control.include_pragma.hpl",
+          "match": "#(include|pragma)\\b"
         }
       ]
     },
