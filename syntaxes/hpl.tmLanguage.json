@@ -83,7 +83,7 @@
         },
         {
           "name": "storage.type.struct.hpl",
-          "match": "\\struct\\b"
+          "match": "\\bstruct\\b"
         }
       ]
     },
