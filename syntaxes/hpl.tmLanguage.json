@@ -3,6 +3,9 @@
   "name": "HOI4 Programming Language",
   "patterns": [
     {
+      "include": "#comments"
+    },
+    {
       "include": "#types"
     },
     {
@@ -19,6 +22,30 @@
     }
   ],
   "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.hpl",
+          "begin": "//",
+          "end": "$",
+          "patterns": [
+            {
+              "match": ".+"
+            }
+          ]
+        },
+        {
+          "name": "comment.block.hpl",
+          "begin": "/\\*",
+          "end": ".*\\*/",
+          "patterns": [
+            {
+              "match": ".+"
+            }
+          ]
+        }
+      ]
+    },
     "types": {
       "patterns": [
         {
@@ -44,6 +71,10 @@
         {
           "name": "storage.type.auto.hpl",
           "match": "\\bauto\\b"
+        },
+        {
+          "name": "storage.type.struct.hpl",
+          "match": "\\struct\\b"
         }
       ]
     },
@@ -52,6 +83,10 @@
         {
           "name": "support.function.core.hpl",
           "match": "\\b(print|str|bool|int|float|createFolder|removeFolder|createFile|readFile|writeFile|writeToLine|writeToMultipleLines|removeFile|copyFile|writeLocalisation|convertToDds|pathExists|getFilenameFromPath|find|replaceAll)\\b"
+        },
+        {
+          "name": "support.function.call.hpl",
+          "match": "\\b([a-zA-Z_][a-zA-Z_0-9]*)\\("
         }
       ]
     },
