@@ -118,8 +118,8 @@
           "match": "\\b(if|return)\\b"
         },
         {
-          "name": "keyword.control.include_pragma.hpl",
-          "match": "#(include|pragma)\\b"
+          "name": "keyword.control.include_read.hpl",
+          "match": "#(include|read)\\b"
         }
       ]
     },
