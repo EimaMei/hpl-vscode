@@ -4,7 +4,9 @@ All notable changes to this project will be documented in this file.
 
 ## [0.0.4] - 2022-12-29
 
-- Add simple completion for core types and functions
+### Added
+
+- Simple completion for core types and functions
 
 ## [0.0.3] - 2022-12-29
 
