@@ -2,7 +2,7 @@
   "name": "hpl",
   "displayName": "HPL",
   "description": "VSCode extension for HPL.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "icon": "public/icon.png",
   "repository": {
