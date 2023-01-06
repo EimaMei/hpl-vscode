@@ -120,6 +120,10 @@
         {
           "name": "keyword.control.include_read.hpl",
           "match": "#(include|read)\\b"
+        },
+        {
+          "name": "keyword.operator.hpl",
+          "match": "(\\+|\\-|\\*|\\/|\\%|\\!|\\=|\\<|\\>)"
         }
       ]
     },
@@ -145,7 +149,7 @@
         },
         {
           "name": "constant.other.placeholder.hpl",
-          "match": "{[^}]*}"
+          "match": "\\{[\\w\\(\\)\\[\\]\\.]+\\}"
         }
       ]
     }
