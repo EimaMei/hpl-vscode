@@ -103,7 +103,7 @@
       "patterns": [
         {
           "name": "support.function.core.hpl",
-          "match": "\\b(print|str|bool|int|float|createFolder|removeFolder|createFile|readFile|writeFile|writeToLine|writeToMultipleLines|removeFile|copyFile|writeLocalisation|convertToDds|pathExists|getFilenameFromPath|find|replaceAll)\\b"
+          "match": "\\b(print|str|bool|int|float|createFolder|removeFolder|createFile|readFile|writeFile|writeToLine|writeToMultipleLines|removeFile|copyFile|writeLocalisation|convertToDds|pathExists|getFilenameFromPath|find|replaceAll|len|HPL_throwError)\\b"
         },
         {
           "name": "support.function.call.hpl",

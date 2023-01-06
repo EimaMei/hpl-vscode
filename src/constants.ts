@@ -21,4 +21,6 @@ export const coreFunctions = [
   "getFilenameFromPath",
   "find",
   "replaceAll",
+  "len",
+  "HPL_throwError",
 ];
