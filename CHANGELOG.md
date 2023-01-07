@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.6] - 2023-01-07
+
+### Added
+
+- Coloring for operators
+
+### Fixed
+
+- Coloring for f-strings
+
 ## [0.0.5] - 2023-01-06
 
 ### Added
