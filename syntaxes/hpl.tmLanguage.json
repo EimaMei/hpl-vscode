@@ -135,6 +135,10 @@
         {
           "name": "constant.character.escape.hpl",
           "match": "\\\\."
+        },
+        {
+          "name": "constant.other.placeholder.hpl",
+          "match": "\\§\\w[^§]+\\§"
         }
       ]
     },
@@ -150,6 +154,10 @@
         {
           "name": "constant.other.placeholder.hpl",
           "match": "\\{[\\w\\(\\)\\[\\]\\.]+\\}"
+        },
+        {
+          "name": "constant.other.placeholder.hpl",
+          "match": "\\§\\w[^§]+\\§"
         }
       ]
     }
