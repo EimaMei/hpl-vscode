@@ -9,6 +9,12 @@
       "include": "#types"
     },
     {
+      "include": "#include-core-lib"
+    },
+    {
+      "include": "#read-once"
+    },
+    {
       "include": "#constants"
     },
     {
@@ -142,6 +148,15 @@
         }
       ]
     },
+    "include-core-lib": {
+      "name": "string.unquoted.corelib.hpl",
+      "match": "(\\<.*\\>)"
+    },
+    "read-once": {
+      "name": "constant.language.hpl",
+      "match": "(?#read)\\s+(once)"
+    },
+
     "fstrings": {
       "name": "string.quoted.fstring.hpl",
       "begin": "f\"",
