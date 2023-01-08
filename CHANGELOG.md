@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.7] - 2023-01-08
+
+### Added
+
+- Coloring for localization tooltips
+- Coloring for `&`, `&&` and `||`
+
 ## [0.0.6] - 2023-01-07
 
 ### Added
